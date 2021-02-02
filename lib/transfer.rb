@@ -19,7 +19,7 @@ class Transfer
   end
 
   def execute_transaction
-
+    receiver.balance += sender.deposit(money)
   end
 
 end
