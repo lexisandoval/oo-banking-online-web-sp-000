@@ -19,7 +19,7 @@ class Transfer
   end
 
   def execute_transaction
-    if valid? && !@status == "complete"
+    if valid? && @status == "pending"
       @sender.withdraw(@amount)
       @receiver.deposit(@amount)
       @status = "complete"
