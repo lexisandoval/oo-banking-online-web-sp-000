@@ -11,7 +11,7 @@ class Transfer
   end
 
   def valid?
-    if sender.status == "open" && receiever.staus == "open"
+    if sender.status == "open" && receiver.staus == "open"
       true
     else
       false
