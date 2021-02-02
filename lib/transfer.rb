@@ -20,7 +20,7 @@ class Transfer
 
   def execute_transaction(money)
     amount = sender.deposit(money)
-    
+
   end
 
 end
