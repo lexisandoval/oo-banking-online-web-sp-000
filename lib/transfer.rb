@@ -22,6 +22,7 @@ class Transfer
     if valid?
       @sender.withdraw(@amount)
       @receiver.deposit(@amount)
+      @status = "complete"
     end
     #sender.balance -= sender.deposit(@amount)
   end
