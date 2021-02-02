@@ -19,7 +19,7 @@ class Transfer
   end
 
   def execute_transaction
-    if self.valid?
+    if valid?
       @sender.withdraw(@amount)
       @receiver.deposit(@amount)
     end
